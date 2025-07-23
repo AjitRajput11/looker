@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Ajit Rajput</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toggle">
+    <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+
+  <div class="container">
+    <h1>About Me</h1>
+    <p>I'm Ajit Rajput, a data analyst and visualization expert with 7+ years of experience in transforming raw data into actionable insights.</p>
+    <ul>
+      <li><strong>Specialized in:</strong> Google Looker Studio, BigQuery, Google Sheets</li>
+      <li><strong>Industry Focus:</strong> Sales, Marketing, Agritech, Finance</li>
+      <li><strong>Skills:</strong> Dashboard Design, Data Blending, GA4 Integration, Custom KPIs</li>
+    </ul>
+    <a class="button" href="index.html">← Back to Home</a>
+  </div>
+
+<script>
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", saved);
+});
+</script>
+
+</body>
+</html>
