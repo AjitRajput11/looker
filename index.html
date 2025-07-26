@@ -1,156 +1,20 @@
-<!-- projects.html - Dashboard Hub Page -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Projects | Ajit Rajput</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajit Rajput | Looker Studio Expert</title><link rel="stylesheet" href="style.css"></head>
 <body>
-  <div class="toggle">
-    <button class="button" onclick="toggleTheme()">Toggle Theme</button>
-  </div>
-  <div class="container">
-    <h1>Explore Dashboards by Tool</h1>
-    <a class="button" href="looker.html">Looker Studio</a>
-    <a class="button" href="powerbi.html">Power BI</a>
-    <a class="button" href="tableau.html">Tableau</a>
-    <a class="button" href="sql.html">SQL Projects</a>
-    <a class="button" href="python.html">Python Projects</a>
-    <a class="button" href="index.html">← Back to Home</a>
-  </div>
+<div class="toggle"><button class="button" onclick="toggleTheme()">Toggle Theme</button></div>
+<div class="container"><h1>Ajit Rajput</h1><p>Looker Studio & Data Visualization Expert</p>
+<p>I design interactive dashboards that turn data into decisions.</p>
+<a href="projects.html" class="button">View Projects</a><a href="about.html" class="button">About Me</a>
+<a class="button" href="https://www.fiverr.com/yourusername" target="_blank">Hire Me on Fiverr</a></div>
 <script>
 function toggleTheme() {
   const current = document.documentElement.getAttribute("data-theme");
   const next = current === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("theme", next);
-}
+  localStorage.setItem("theme", next);}
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("theme") || "light";
-  document.documentElement.setAttribute("data-theme", saved);
-});
-</script>
-</body>
-</html>
-
-<!-- looker.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Looker Studio Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-  <h1>Looker Studio Dashboards</h1>
-
-  <div class="project-card">
-    <h3>Sales Overview</h3>
-    <img src="images/sales-looker.png" alt="Sales Overview">
-    <a class="button" href="https://lookerstudio.google.com/reporting/YOUR_REPORT_ID" target="_blank">View More</a>
-  </div>
-
-  <a class="button" href="projects.html">← Back to Projects</a>
-</div>
-</body>
-</html>
-
-<!-- powerbi.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power BI Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-  <h1>Power BI Dashboards</h1>
-
-  <div class="project-card">
-    <h3>Customer Segmentation</h3>
-    <img src="images/customer-powerbi.png" alt="Customer Segmentation">
-    <a class="button" href="https://app.powerbi.com/view?r=YOUR_REPORT_ID" target="_blank">View More</a>
-  </div>
-
-  <a class="button" href="projects.html">← Back to Projects</a>
-</div>
-</body>
-</html>
-
-<!-- tableau.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableau Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-  <h1>Tableau Dashboards</h1>
-
-  <div class="project-card">
-    <h3>Profit Analysis</h3>
-    <img src="images/profit-tableau.png" alt="Profit Analysis">
-    <a class="button" href="https://public.tableau.com/views/YOUR_VIEW_ID" target="_blank">View More</a>
-  </div>
-
-  <a class="button" href="projects.html">← Back to Projects</a>
-</div>
-</body>
-</html>
-
-<!-- sql.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SQL Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-  <h1>SQL Projects</h1>
-
-  <div class="project-card">
-    <h3>Retail Data Query</h3>
-    <img src="images/sql-retail.png" alt="SQL Retail">
-    <a class="button" href="projects/sql-retail.pdf" target="_blank">View More</a>
-  </div>
-
-  <a class="button" href="projects.html">← Back to Projects</a>
-</div>
-</body>
-</html>
-
-<!-- python.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python Projects</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-  <h1>Python Data Projects</h1>
-
-  <div class="project-card">
-    <h3>Churn Prediction Model</h3>
-    <img src="images/churn-python.png" alt="Churn Model">
-    <a class="button" href="projects/churn-report.html" target="_blank">View More</a>
-  </div>
-
-  <a class="button" href="projects.html">← Back to Projects</a>
-</div>
-</body>
-</html>
+  document.documentElement.setAttribute("data-theme", saved);});
+</script></body></html>
