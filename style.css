@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: var(--bg);
@@ -56,16 +57,4 @@ iframe {
 .toggle {
   float: right;
   margin-top: -20px;
-}
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-  background-color: var(--bg);
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
-}
-.project-card h3 {
-  margin-top: 0;
-  color: var(--accent);
 }
